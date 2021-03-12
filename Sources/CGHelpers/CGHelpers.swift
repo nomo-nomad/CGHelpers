@@ -60,7 +60,7 @@ public extension CGSize {
 
 // MARK: - CGVector helpers
 
-extension CGVector {
+public extension CGVector {
   /// A unit vector at the specified angle
   /// - Parameter angle: Radians
   init(angle: CGFloat) {
@@ -139,7 +139,7 @@ extension CGVector {
 
 // MARK: - CGPoint helpers
 
-extension CGPoint {
+public extension CGPoint {
   static func += (left: inout CGPoint, right: CGVector) {
     left = left + right // swiftlint:disable:this shorthand_operator
   }
